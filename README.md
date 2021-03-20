@@ -33,8 +33,8 @@ which school he should opt for.
 <h4 align= "left"><b>SmartPredict</b></h4>
 
 <p align="left">
-<img width=80% src="Assets/ML/photo1.jpeg"> &ensp;
-<img width=80% src="Assets/ML/photo2.jpeg"> &ensp;
+<img width=80% src="Assets/ML/photo11.jpeg"> &ensp;
+<img width=80% src="Assets/ML/photo22.jpeg"> &ensp;
 </p>
 
 It is a web-app that makes use of Machine learning inorder to determine whether a student will be able to get into the School Admission Process based on metrics such as their PCMB scores, SS scores, their CGPA and other relevant information. Also, there is a detailed Analysis of past records and data for the parents to witness so that they choose the best for their children.
