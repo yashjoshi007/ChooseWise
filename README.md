@@ -52,9 +52,9 @@ A versatile and helpful chatbot will be present on our webpage for the aid of th
 
 *Web*
 - eJS,CSS,Bootstrap
-- jQuery,notifyJS
+- JavaScript,jQuery
 - NodeJS,expressJS
-- Firebase Storage
+- MySQL
 
 *Machine Learning*
 - Python
