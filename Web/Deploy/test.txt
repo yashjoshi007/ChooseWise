@@ -1,0 +1,52 @@
+INSERT INTO schools (schoolID,name,imgurl,city,state,distance,rating) VALUES 
+('li7yT21sI','Gujarat Public School','gps.jpg','Vadodara','Gujarat','10 ','6.0')
+
+INSERT INTO `details` (`id`, `schoolID`, `about`, `achievements`, `faculties`, `activities`, `vacancy`, `contactNum`, `contactMail`, `fee`) VALUES (NULL, 'p9iyT21sI', 'Gujarat Public Schools are a group of schools run under the able guidance and governance of BRG Group. The group of schools offer the most promising education at par with the present world scenario that is crafted with precision using meticulously-planned curriculum, able and experienced staff, tools of technology, and modern infrastructure. The schools cater to both the CBSE and GSEB boards with medium of instruction in English. The motto of the schools remains – “WORKING TOWARDS A BETTER AND AN EDUCATED SOCIETY.” Gujarat Public School has strived itself to be recognized / known as one amongst the most popular & leading brand name in the city of Vadodara and today it stands upright focusing on the all round development of the child in academics, activities and sports. Equal and fair importance is given not only to academics but also to art, sports & activities, thus ensuring that the child is able to decide and build its own future. It offers the most child friendly methodology which is apt to suit the curriculum needs and cater to high academic standards.', 'achgps1.jpg,achgps2.jpg,achgps3.jpg', 'facgps1.jpg,facgps2.jpg,facdis3.jpg', 'actgps1.jpg,actgps2.jpg,actgps3.jpg', '87', '26002221', 'info@gps.com', '49000');
+
+ let about = result[0].about,
+        achievements = result[0].achievements,
+        faculties = result[0].faculties,
+        activities = result[0].activities,
+        vacancy = result[0].vacancy,
+        number = result[0].contactNum,
+        email = result[0].contactMail,
+        fee = result[0].fee;
+      let ach = [],
+        x = achievements.split(",");
+      x.forEach(function (e) {
+        if (ach.indexOf(e) == -1) ach.push(e);
+      });
+      let fac = [],
+        y = faculties.split(",");
+      y.forEach(function (e) {
+        if (fac.indexOf(e) == -1) fac.push(e);
+      });
+
+      let act = [],
+        z = activities.split(",");
+      z.forEach(function (e) {
+        if (act.indexOf(e) == -1) act.push(e);
+      });
+      console.log(z);
+      res.render("view", {
+        page: "view",
+        name: name,
+        img: imgurl,
+        city: city,
+        state: state,
+        about: about,
+        number: number,
+        email: email,
+        vacancy: vacancy,
+        achievements: ach,
+        faculties: fac,
+        activities: act,
+        fee: fee,
+      });
+    });
+  });
+
+
+
+
+

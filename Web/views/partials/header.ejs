@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    
+    <% if (page=="view") { %>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <% } %>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="icon" href="/images/logo-final.png" type="image/ico" />
+    <link
+        rel="stylesheet"
+        href="/css/<%= typeof page !== 'undefined' ? page : '' %>.css"
+    />
+
+    <link rel="stylesheet" href="/css/nav.css" />
+    <title>ChooseWise | <%=typeof page !== 'undefined' ? page.replace(/\w/, c => c.toUpperCase()):''%></title>
+</head>
+<body>
+
+<section id="nav">
+    <nav>
+    <div class="logo">
+        <img src="/images/logo-final.png" alt="Logo" class="logo-img">
+    </div>
+    <div class="hamburger">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+    </div>
+    <ul class="nav-links">
+        <div>
+            <li><a href="/"><i class="fas fa-home"></i> Home</a></li>
+            <li><a href="/about"><i class="fas fa-info-circle"></i> About</a></li>
+            <li><a href="/explore"><i class="fab fa-wpexplorer"></i> Explore</a></li>
+            <li><a href="/search"><i class="fas fa-search"></i> Search</a></li>
+
+        </div>
+       <!-- <div class="profile">
+             <img src="images/def.png"alt="">
+            <div class="dropdown">
+                <button class="dropbtn" href="#">Mohammad Muazam <i class="fa fa-angle-down" aria-hidden="true"></i> </button>
+                <div class="dropdown-content">
+                    <a href="/profile"><i class="far fa-home"></i> Home</a>
+                    <a href="#"><i class="fas fa-info-circle"></i> About</a>
+                    <a href="/createForm"><i class="fas fa-search"></i> Search</a>
+                    <a href="/logout" id="logout"><i class="fas fa-sign-out-alt"></i> Logout</a>
+                </div>
+            </div> 
+        </div>-->
+        <!-- <div class="log-in">
+            <button class="btn login-btn">SmartPredict</button>
+
+        </div> -->
+        <div id="button">
+          <div class="link_wrapper">
+            <a href="https://choosewise.herokuapp.com/" target="_blank">SmartPredict</a>
+            <div class="icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 268.832 268.832">
+                <path d="M265.17 125.577l-80-80c-4.88-4.88-12.796-4.88-17.677 0-4.882 4.882-4.882 12.796 0 17.678l58.66 58.66H12.5c-6.903 0-12.5 5.598-12.5 12.5 0 6.903 5.597 12.5 12.5 12.5h213.654l-58.66 58.662c-4.88 4.882-4.88 12.796 0 17.678 2.44 2.44 5.64 3.66 8.84 3.66s6.398-1.22 8.84-3.66l79.997-80c4.883-4.882 4.883-12.796 0-17.678z"/>
+              </svg>
+            </div>
+          </div>  
+        </div>
+        
+    </ul>
+
+</nav>
+<% if (page!=="chatbot") { %>
+ <div class="chatbot" onclick="window.location.href='/chatbot'" title="Cookie Bot">
+    <div class="icon">
+        <i class="fas fa-comment-dots"></i>
+    </div>
+</div>
+<% } %>
+
+</section>
+
+

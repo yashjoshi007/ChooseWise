@@ -1,0 +1,117 @@
+#home {
+  min-height: 100vh;
+  padding: 100px 0;
+  background: rgb(226, 226, 226);
+  position: relative;
+}
+#home .wrapper p {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #999;
+}
+#home .container {
+  padding: 20px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#home .container .item {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  background: rgb(248, 248, 248);
+  box-shadow: rgba(51, 51, 51, 0.2) 0px 2px 8px 0px;
+  border-radius: 10px;
+  width: 70%;
+  max-height: 250px;
+  padding: 5px 0px;
+  margin: 20px 0;
+  cursor: pointer;
+  transition: box-shadow 0.3s, width 0.6s;
+}
+#home .container .item:hover {
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+#home .container .item img {
+  width: 300px;
+  height: 200px;
+  max-height: 250px;
+  margin: 0 20px 0 5px;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+#home .container .item .description {
+  width: 60%;
+  position: relative;
+  /* left: -100px; */
+  margin-top: 10px;
+}
+#home .container .item h3 {
+  font-size: 20px;
+  font-weight: 600;
+}
+#home .container .item h3,
+#home .container .item p {
+  color: black;
+}
+#home .container .item p {
+  margin: 0;
+  font-size: 14px;
+}
+#home .container .item hr {
+  margin: 10px 0;
+  width: 90%;
+}
+#home .container .item .fa-star {
+  color: rgb(255, 145, 0);
+  font-size: 14px;
+}
+#home .container .item .description #value {
+  background: black;
+  padding: 0 5px 1px 6px;
+  border-radius: 10px;
+  font-size: 12px;
+  color: white;
+}
+
+@media (max-width: 992px) {
+  #home .container .item {
+    width: 90%;
+  }
+}
+
+@media (max-width: 752px) {
+  #home .container {
+    max-width: 95%;
+  }
+  #home .container .item {
+    width: 100%;
+  }
+  #home .container .item img {
+    width: 270px;
+  }
+}
+@media (max-width: 552px) {
+  #home .container .item {
+    min-height: 190px;
+  }
+  #home .container .item .description {
+    margin-top: 0;
+  }
+  #home .container .item img {
+    width: 190px;
+    height: 100%;
+  }
+}
+@media (max-width: 450px) {
+  #home .container .item img {
+    width: 160px;
+    height: 100%;
+  }
+  #home .container .item hr {
+    margin: 5px 0;
+  }
+}
