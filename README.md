@@ -18,7 +18,7 @@ physical presence at any unknown place, and will make this task easier and simpl
 
 <h2 align= "left"><b>Our Product - ChooseWise(A Preview)</b></h2>
 
-<p align="left"><img width=20% src="Assets/Misc/ChooseWise.png"></p>
+<p align="left"><img width=20% src="Assets/Misc/Logo.jpg"></p>
 
 ChooseWise has three-interfaces: the Main Website, the SmartPredict and a Versatile Chatbot
 
