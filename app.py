@@ -10,7 +10,7 @@ import seaborn as sns
 st.set_option('deprecation.showfileUploaderEncoding',False) 
 model = pickle.load(open('model.pkl','rb'))
 
-st.markdown("<h1 style='text-align: center; color: White;background-color:#e84343'>School Admission Predictor</h1>", unsafe_allow_html=True)
+st.markdown("<h1 style='text-align: center; color: White;background-color: Grey'>School Admission Predictor</h1>", unsafe_allow_html=True)
 st.markdown("<h3 style='text-align: center; color: Black;'>Drop in The required Inputs and we will do  the rest.</h3>", unsafe_allow_html=True)
 st.markdown("<h4 style='text-align: center; color: Black;'>Project by Cookie Clan</h4>", unsafe_allow_html=True)
 st.sidebar.header("What is this Project about?")
