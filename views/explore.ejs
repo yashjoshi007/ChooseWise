@@ -1,0 +1,30 @@
+<%- include("partials/header") %> 
+<section id="home">
+    <div class="container">
+        <% schools.forEach(element => { %>
+            <!-- item  -->
+        <div class="item" onclick="window.location.href='/view/<%= element.schoolID%>'">
+            <div class="img">
+                <img src="images/<%=element.imgurl%>" alt="">
+            </div>
+            <div class="description">
+                <h3><%= element.name %></h3>
+                <p><%= element.city %></p>
+                <p><%= element.state %></p>
+                <hr>
+                <p><i class="fas fa-map-marker-alt"></i> <%= element.distance %>km to City Center</p>
+                <hr>
+                <div class="ratings">
+                    <% for( let index = 1; index <= parseInt( element.rating)/2; index++ ) { %>
+                        <i class="fas fa-star"></i>
+                    <% } %>
+                    <span id="value"><%= element.rating %></span>
+                    <!-- <span id="number">(10 Reviews)</span> -->
+                </div>
+            </div>
+        </div>
+        <!-- item end  -->
+        <% }) %>
+    </div>
+</section>
+<%- include("partials/footer") %> 

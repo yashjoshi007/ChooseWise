@@ -1,0 +1,62 @@
+<%- include("partials/header") %> 
+    <section id="view">
+        <div class="container">
+         
+          <div class="carousel-inner">
+            <img src="/images/<%= img %> " alt="" class="img-responsive d-block w-100">
+          </div>
+        <!-- toggler start -->
+          <section class="toggler">
+            <nav class="navbar navbar-expand-sm navbar-light bg-light">
+              <a class="navbar-brand">About</a>
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fas fa-angle-down arrow" aria-hidden="true"></i>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                  <li class="nav-item active">
+                    <a class="nav-link" id="about">About</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" id="achievements">Achievements</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" id="facilities">Facilities</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" id="activities">Activities</a>
+                  </li>
+                 
+                </ul>
+              </div>
+            </nav>
+          </section> 
+          <!-- toggler end -->
+          <!-- about section      -->
+          <section class="about section">
+            <h3 class="name"><%= name %> </h3>
+            <p class="address"><%=city%>, <%=state%></p>
+            <p class="about-us"><%= about %> </p>
+            <h5>Contact Us</h5>
+            <div class="contact">
+              <a href="#"><i class="fas fa-phone"> </i><%= number %> </a>
+              <a href="#"><i class="fas fa-envelope    "></i><%= email %> </a>
+            </div>
+            
+          </section>
+          <!-- achievements section  -->
+          <section class="achievements section">
+            <p>Achievements</p>
+          </section>
+          <!-- facilities section  -->
+          <section class="facilities section">
+            <p>Facilities</p>
+          </section>
+          <!-- activities section  -->
+          <section class="activities section">
+            <p>Activities</p>
+          </section>
+        </div>
+        
+    </section>
+<%- include("partials/footer") %> 
