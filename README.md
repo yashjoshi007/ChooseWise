@@ -25,14 +25,14 @@ ChooseWise has three-interfaces: the Main Website, the SmartPredict and a Versat
 <h4 align= "left"><b>ChooseWise Website</b></h4>
 
 <p align="left">
-<img width=30% src="Assets/web/web1.png"> &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;
-<img width=30% src="Assets/web/web2.png"> &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp; 
-<img width=30% src="Assets/web/web3.png"> &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;
-<img width=30% src="Assets/web/web4.png"> &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;
-<img width=30% src="Assets/web/web5.png"> &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;
-<img width=30% src="Assets/web/web6.png"> &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;
-<img width=30% src="Assets/web/web7.png"> &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;
-<img width=30% src="Assets/web/web10.png"> &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;
+<img width=40% src="Assets/web/web1.png"> &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;
+<img width=40% src="Assets/web/web2.png"> &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp; 
+<img width=40% src="Assets/web/web3.png"> &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;
+<img width=40% src="Assets/web/web4.png"> &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;
+<img width=40% src="Assets/web/web5.png"> &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;
+<img width=40% src="Assets/web/web6.png"> &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;
+<img width=40% src="Assets/web/web7.png"> &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;
+<img width=40% src="Assets/web/web10.png"> &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;
 </p>
 
 Our website will be holding a list of schools for that particular region now parents can select any school to
@@ -44,8 +44,8 @@ which school he should opt for.
 <h4 align= "left"><b>SmartPredict</b></h4>
 
 <p align="left">
-<img width=60% src="Assets/ML/model1.png"> &ensp;
-<img width=60% src="Assets/ML/model2.png"> &ensp;
+<img width=80% src="Assets/ML/model1.png"> &ensp;
+<img width=80% src="Assets/ML/model2.png"> &ensp;
 </p>
 
 It is a web-app that makes use of Machine learning inorder to determine whether a student will be able to get into the School Admission Process based on metrics such as their PCMB scores, SS scores, their CGPA and other relevant information. Also, there is a detailed Analysis of past records and data for the parents to witness so that they choose the best for their children.
@@ -60,7 +60,8 @@ A versatile and helpful chatbot will be present on our webpage for the aid of th
 
 <h2 align= "left"><b>Have Fun With Our Product</b></h2>
 
-- Website Link : DEMO
+- Website Link : https://choosewisee.herokuapp.com/
+- ML WebAPP : https://choosewise.herokuapp.com/
 
 <h2 align= "left"><b>Tech Stack Used</b></h2>
 
