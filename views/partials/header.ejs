@@ -8,6 +8,10 @@
     <!-- Bootstrap CSS -->
     
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    
+    <% if (page=="view") { %>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <% } %>
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
     <link rel="icon" href="images/" type="image/ico" />
     <link
@@ -16,14 +20,14 @@
     />
 
     <link rel="stylesheet" href="/css/nav.css" />
-    <title>Hospital | <%=typeof page !== 'undefined' ? page.replace(/\w/, c => c.toUpperCase()):''%></title>
+    <title>ChooseWise | <%=typeof page !== 'undefined' ? page.replace(/\w/, c => c.toUpperCase()):''%></title>
 </head>
 <body>
 
 <section id="nav">
     <nav>
     <div class="logo">
-        <img src="images/logo.png" alt="Logo">
+        <img src="images/logo1.png" alt="Logo" class="logo-img">
     </div>
     <div class="hamburger">
         <div class="line1"></div>
@@ -51,7 +55,7 @@
             </div> 
         </div>-->
         <div class="log-in">
-            <button class="btn login-btn">Login</button>
+            <button class="btn login-btn">Try our product!</button>
 
         </div>
     </ul>
