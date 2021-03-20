@@ -11,7 +11,9 @@
 .main-img img {
   height: 450px;
 }
-
+.arrow {
+  font-size: 20px;
+}
 .toggler {
   margin-top: 20px;
 }
@@ -150,6 +152,10 @@ p {
   #view .apply button {
     width: 100px;
     padding: 7px 0px;
+  }
+  .carousel {
+    border-radius: 15px;
+    width: 90%;
   }
 }
 @media (max-width: 450px) {

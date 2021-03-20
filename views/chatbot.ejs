@@ -1,8 +1,26 @@
-<%- include("partials/header") %> 
-    <div class="heading">
-        <img src="/images/logo-final.png" width="100" height="50" alt="">
-        <span>Cookie Bot</span>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chatbot</title>
+    <link rel="stylesheet" href="/css/chatbot.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="icon" href="/images/logo-final.png" type="image/ico" />
 
+</head>
+<body>
+    
+    <div class="heading">
+        <img src="/images/logo-final.png" onclick="window.location.href='/'" width="100" height="50" alt="">
+        <!-- <span>Cookie Bot</span> -->
+        <div class="btns">
+            <button class="btn" onclick="window.location.href='/'"><i class="far fa-home"></i></button>
+            <button class="btn" onclick="window.location.href='/about'"><i class="far fa-info-circle"></i></button>
+            <button class="btn" onclick="window.location.href='/explore'"><i class="fab fa-wpexplorer"></i></button>
+            <button class="btn" onclick="window.location.href='/search'"><i class="far fa-search"></i></button>
+        </div>
+        
     </div>
     <section class="main">
             <div class="user-area">

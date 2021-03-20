@@ -6,6 +6,7 @@ let hide = () => {
   }
 };
 $(document).ready(function () {
+  $(".carousel").carousel();
   hide();
   $(".section").hide();
   $(".about").show();
@@ -16,11 +17,18 @@ $(document).ready(function () {
     let id = $(this).attr("id");
     $(".section").hide();
     $(`.${id}`).show();
+    if ($("#navbarNav").hasClass("in"))
+      $(".arrow").removeClass("fa-angle-up").addClass("fa-angle-down");
+    else $(".arrow").removeClass("fa-angle-down").addClass("fa-angle-up");
+    // $(".navbar-collapse").collapse("hide");
   });
   $(".navbar-toggler").click(function () {
-    $(".arrow").toggleClass("fa-angle-down fa-angle-up");
+    // $(".arrow").toggleClass("fa-angle-down fa-angle-up");
+    if ($("#navbarNav").hasClass("in"))
+      $(".arrow").removeClass("fa-angle-up").addClass("fa-angle-down");
+    else $(".arrow").removeClass("fa-angle-down").addClass("fa-angle-up");
   });
-  $(".navbar-nav>li>a").on("click", function () {
+  $(".navbar-nav li a").on("click", function () {
     $(".navbar-collapse").collapse("hide");
   });
 });

@@ -52,12 +52,16 @@ body {
 .heading {
   text-align: center;
   padding: 10px 0;
+  background: white;
   box-shadow: 10px 0 5px #b9b7b7;
+  box-shadow: 0 3px 20px rgba(0, 0, 0, 0.3);
+
   width: 100%;
   position: fixed;
   z-index: 2;
 }
 .heading span {
+  text-transform: uppercase;
   font-size: 30px;
   position: relative;
   left: -80px;
@@ -67,7 +71,30 @@ body {
 }
 .heading img {
   float: left;
+  cursor: pointer;
   margin: 0 10px;
+}
+.btns {
+  position: absolute;
+  right: 0px;
+  top: 10px;
+}
+.btn {
+  /* float: right; */
+  background: transparent;
+  color: black;
+  border: none;
+  outline: none;
+  padding: 10px 15px;
+  margin: 0px 0;
+  cursor: pointer;
+  font-size: 23px;
+}
+@media (max-width: 550px) {
+  .btn {
+    margin: 0;
+    width: 45px;
+  }
 }
 .main {
   width: 100%;

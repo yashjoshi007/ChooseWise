@@ -32,11 +32,11 @@ body {
 }
 #nav .logo img {
   height: 55px;
-  width: 180px;
+  width: 160px;
 }
 @media (max-width: 552px) {
   #nav .logo img {
-    width: 160px;
+    width: 140px;
     height: 55px;
   }
 }
@@ -216,7 +216,7 @@ body {
 }
 #button a {
   position: relative;
-  top: -3px;
+  /* top: -3px; */
   display: block;
   width: 170px;
   height: 50px;
