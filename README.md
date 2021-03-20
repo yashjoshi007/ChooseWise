@@ -53,7 +53,7 @@ It is a web-app that makes use of Machine learning inorder to determine whether 
 <h4 align= "left">Versatile Chatbot<b></b></h4>
 
 
-<img width=80% src="Assets/web/chatbot.png"> &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;
+<img width=80% src="Assets/web/chat.jpeg"> &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;
 
 A versatile and helpful chatbot will be present on our webpage for the aid of the users.Best feature of the bot is that it listens to your audio and responds accordingly.This makes it hands free and helps it to function without texting.A feature which increases our communication with the users.
 
