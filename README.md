@@ -1,6 +1,8 @@
 # Submission by Cookie Clan for MozoHack 2.1
 Entry of Cookie Clan, from SRM Institute of Science and Technology, Kattankulathur, to MozoHack 2.1.
 
+<p align="left"><img width=20% src="Assets/Misc/Cookie%20Clan.jpg"></p>
+
 <h2 align= "left"><b>Tracks and Problem Statement</b></h2>
 
 Track : Education and sports
@@ -14,7 +16,9 @@ home.
 This idea will save time, will be less hectic for parents, will give the best for the student, will help to avoid
 physical presence at any unknown place, and will make this task easier and simpler.
 
-<h2 align= "left"><b>Our Product - ChooseWise</b></h2>
+<h2 align= "left"><b>Our Product - ChooseWise(A Preview)</b></h2>
+
+<p align="left"><img width=20% src="Assets/Misc/ChooseWise.png"></p>
 
 ChooseWise has three-interfaces: the Main Website, the SmartPredict and a Versatile Chatbot
 
@@ -27,6 +31,11 @@ which school he should opt for.
 
 
 <h4 align= "left"><b>SmartPredict</b></h4>
+
+<p align="left">
+<img width=80% src="Assets/ML/photo1.jpeg"> &ensp;
+<img width=80% src="Assets/ML/photo2.jpeg"> &ensp;
+</p>
 
 It is a web-app that makes use of Machine learning inorder to determine whether a student will be able to get into the School Admission Process based on metrics such as their PCMB scores, SS scores, their CGPA and other relevant information. Also, there is a detailed Analysis of past records and data for the parents to witness so that they choose the best for their children.
 
