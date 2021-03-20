@@ -22,16 +22,22 @@ app.use(bodyparser.urlencoded({ extended: false }));
 app.use(express.static(__dirname + "/public"));
 app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
+// const con = mysql.createConnection({
+//   host: "localhost",
+//   user: "root",
+//   password: "",
+//   database: "cookie-clan",
+// });
 const con = mysql.createConnection({
-  host: "localhost",
-  user: "root",
-  password: "",
-  database: "cookie-clan",
+  host: "sql6.freemysqlhosting.net",
+  user: "sql6400322",
+  password: "MapNmn5DTx",
+  database: "sql6400322",
 });
 // const query = util.promisify(con.query).bind(con);
 
 app.get("/", (req, res) => {
-  res.render("index", { page: "index" });
+  res.render("index", { page: "home" });
 });
 app.get("/explore", (req, res) => {
   let query = `SELECT * FROM schools`;
@@ -118,6 +124,9 @@ app.post("/search", (req, res) => {
 });
 app.get("/about", (req, res) => {
   res.render("about", { page: "about" });
+});
+app.get("/chatbot", (req, res) => {
+  res.render("chatbot", { page: "chatbot" });
 });
 const PORT = process.env.PORT || 5000;
 app.listen(PORT, () => console.log(`Server running at http://localhost:${PORT}`));

@@ -28,7 +28,7 @@
   width: 70%;
   max-height: 250px;
   padding: 5px 0px;
-  margin: 10px 0;
+  margin: 20px 0;
   cursor: pointer;
   transition: box-shadow 0.3s, width 0.6s;
 }

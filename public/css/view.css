@@ -53,6 +53,7 @@
   box-shadow: none;
 }
 #view .section {
+  position: relative;
   background: white;
   margin: 20px 0px;
   border-radius: 10px;
@@ -103,6 +104,18 @@ p {
   align-items: center;
   padding: 50px 20px;
 }
+#view .apply {
+  position: absolute;
+  right: 22px;
+  bottom: 22px;
+}
+#view .apply button {
+  background: #5f5f5f;
+  color: white;
+  width: 130px;
+  padding: 7px 0px;
+  font-size: 19px;
+}
 .carousel {
   border-radius: 15px;
   width: 70%;
@@ -134,6 +147,10 @@ p {
   .carousel-inner-1 img {
     height: 330px;
   }
+  #view .apply button {
+    width: 100px;
+    padding: 7px 0px;
+  }
 }
 @media (max-width: 450px) {
   .carousel-inner-1 img {
@@ -143,5 +160,10 @@ p {
 @media (max-width: 400px) {
   .carousel-inner-1 img {
     height: 270px;
+  }
+  #view .apply button {
+    width: 80px;
+    font-size: 16px;
+    padding: 7px 0px;
   }
 }

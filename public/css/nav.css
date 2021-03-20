@@ -6,6 +6,7 @@
   font-family: "Noto Sans JP", sans-serif;
   letter-spacing: 1px;
   font-weight: 300;
+  transition: all 0.5s;
 }
 body {
   overflow-x: hidden;
@@ -30,8 +31,14 @@ body {
   text-align: center;
 }
 #nav .logo img {
-  height: 60px;
-  width: 200px;
+  height: 55px;
+  width: 180px;
+}
+@media (max-width: 552px) {
+  #nav .logo img {
+    width: 160px;
+    height: 55px;
+  }
 }
 #nav .nav-links {
   list-style: none;
@@ -53,6 +60,7 @@ body {
   text-decoration: none;
   margin: 0 20px;
   color: black;
+  font-size: 16px !important;
 }
 #nav .nav-links li i,
 #nav .dropbtn i,
@@ -193,6 +201,83 @@ body {
 }
 #nav .toggle .line3 {
   transform: rotate(45deg) translate(-5px, -6px);
+}
+#button .link_wrapper {
+  position: relative;
+  right: 50px;
+  top: 8px;
+}
+@media (max-width: 992px) {
+  #button .link_wrapper {
+    position: relative;
+    right: 0px;
+    top: 15px;
+  }
+}
+#button a {
+  position: relative;
+  top: -3px;
+  display: block;
+  width: 170px;
+  height: 50px;
+  line-height: 50px;
+  font-weight: bold;
+  text-decoration: none;
+  background: #5f5f5f;
+  text-align: center;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border: 3px solid #5f5f5f;
+  transition: all 0.35s;
+}
+#button .icon {
+  width: 50px;
+  height: 50px;
+  border: 3px solid transparent;
+  position: absolute;
+  transform: rotate(45deg);
+  right: 0;
+  top: 0;
+  z-index: -1;
+  transition: all 0.35s;
+}
+#button .icon svg {
+  width: 30px;
+  position: absolute;
+  top: calc(50% - 15px);
+  left: calc(50% - 15px);
+  transform: rotate(-45deg);
+  fill: #5f5f5f;
+  transition: all 0.35s;
+}
+#button a:hover {
+  width: 200px;
+  border: 3px solid #5f5f5f;
+  background: transparent;
+  color: #5f5f5f;
+}
+#button a:hover + .icon {
+  border: 3px solid #5f5f5f;
+  right: -25%;
+}
+
+.chatbot {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  cursor: pointer;
+  z-index: 999;
+}
+.chatbot i {
+  font-size: 28px;
+  color: white;
+  background-color: #000;
+  padding: 15px 15px 15px 15px;
+  border-radius: 50%;
+}
+.chatbot i:hover {
+  transform: scale(0.95);
 }
 
 #footer a {
